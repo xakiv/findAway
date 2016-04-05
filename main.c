@@ -1,3 +1,10 @@
+float getDistance(Poi a, Poi b){
+	//cast: (double)( n * m + l...) avec n m et l int, le r√©sultat de l'expression convertit en double
+	double exp1 = pow((b.xCoord - a.xCoord),2);
+	double exp2 = pow((b.yCoord - a.yCoord),2);
+	return sqrt(exp1+exp2);
+}
+
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include "graph.h"
@@ -5,7 +12,7 @@
 //{
 //    //Declaration des variables
 //    int nbSom=5; //Ids sommet: 0..nbSom-1
-//    printf("--------------Allouer la mÈmoire pour %d sommets:\n",nbSom);
+//    printf("--------------Allouer la m√©moire pour %d sommets:\n",nbSom);
 //	Graphes *mongraphe=NULL;
 //    mongraphe=initgraph(nbSom,0);
 //
@@ -63,7 +70,7 @@
 //	printf("--------------TEST GRAPH ORIENTE--------------------:\n");
 //	printf("----------------------------------------------------:\n");
 //    int nbSom2=10; //Ids sommet: 0..nbSom-1
-//    printf("--------------Allouer la mÈmoire pour %d sommets:\n",nbSom2);
+//    printf("--------------Allouer la m√©moire pour %d sommets:\n",nbSom2);
 //	Graphes *grapheO=NULL;
 //    grapheO=initgraph(nbSom2,1);
 //
